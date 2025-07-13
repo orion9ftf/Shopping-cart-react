@@ -1,4 +1,5 @@
-import './App.css';
+import './assets/css/App.css';
+import './assets/js/App';
 import SectionNavbar from './components/SectionNavbar';
 import RegistroProductos from './components/RegistroProductos';
 import ProductosRegistrados from './components/ProductosRegistrados';
