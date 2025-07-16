@@ -1,25 +1,27 @@
-function Estadicticas() {
-  return <section class="card">
-      <div class="card-header">
+function Estadisticas({ totalProductos, precioPromedio, categoriasUnicas }) {
+  return (
+    <section className="card">
+      <div className="card-header">
         <h2>Estadísticas</h2>
       </div>
-      <div class="card-content">
-        <div class="estadisticas">
-          <div class="stat-item stat-blue">
-            <span class="stat-label">Total de productos:</span>
-            <span class="stat-value" id="total-productos">0</span>
+      <div className="card-content">
+        <div className="estadisticas">
+          <div className="stat-item stat-blue">
+            <span className="stat-label">Total de productos:</span>
+            <span className="stat-value">{totalProductos}</span>
           </div>
-          <div class="stat-item stat-green">
-            <span class="stat-label">Precio promedio:</span>
-            <span class="stat-value" id="precio-promedio">$ 0</span>
+          <div className="stat-item stat-green">
+            <span className="stat-label">Precio promedio:</span>
+            <span className="stat-value">${precioPromedio.toFixed(2)}</span>
           </div>
-          <div class="stat-item stat-purple">
-            <span class="stat-label">Categorías únicas:</span>
-            <span class="stat-value" id="categorias-unicas">0</span>
+          <div className="stat-item stat-purple">
+            <span className="stat-label">Categorías únicas:</span>
+            <span className="stat-value">{categoriasUnicas}</span>
           </div>
         </div>
       </div>
     </section>
+  );
 }
 
-export default Estadicticas;
+export default Estadisticas;

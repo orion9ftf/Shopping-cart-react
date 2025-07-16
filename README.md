@@ -72,3 +72,10 @@ Tareas pendientes:
 
 ## Integración de React al proyecto de Carrito de compras
 
+Para incorporar los estilos, estructura de HTML y Javascript, se crea el archivo `App.js`
+donde tiene toda la lógica almacenada.
+
+Para el estilo de cada componente se dispone de un archivo principal en `src/assets/css/App.css`
+
+Para la estructura de HTML, se crean los componentes, que tendrán la misión de solo mostrar, que actuaría como Patrón Presentador.
+
